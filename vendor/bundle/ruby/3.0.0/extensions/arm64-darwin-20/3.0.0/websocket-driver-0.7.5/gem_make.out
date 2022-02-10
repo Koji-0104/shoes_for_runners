@@ -1,0 +1,15 @@
+current directory: /Users/koji/Documents/workspace/portfolio/shoes_for_runners/vendor/bundle/ruby/3.0.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+/Users/koji/.rbenv/versions/3.0.3/bin/ruby -I /Users/koji/.rbenv/versions/3.0.3/lib/ruby/3.0.0 -r ./siteconf20220208-16548-uvkeos.rb extconf.rb
+creating Makefile
+
+current directory: /Users/koji/Documents/workspace/portfolio/shoes_for_runners/vendor/bundle/ruby/3.0.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make DESTDIR\= clean
+
+current directory: /Users/koji/Documents/workspace/portfolio/shoes_for_runners/vendor/bundle/ruby/3.0.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make DESTDIR\=
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+
+current directory: /Users/koji/Documents/workspace/portfolio/shoes_for_runners/vendor/bundle/ruby/3.0.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 websocket_mask.bundle ./.gem.20220208-16548-zu4bt0
