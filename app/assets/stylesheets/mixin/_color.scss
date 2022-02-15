@@ -1,0 +1,18 @@
+// COLORS
+// color: cl(black);
+//--------------------------------------------------
+
+$colors: (
+  quagmire-green: #978f10,
+  white: #ffffff,
+  black: #000000,
+  whisper: #e7e7e7,
+  gray: #333,
+  dim-gray: #707070,
+  white-smoke: #f6f6f6,
+  boulder: #797878,
+);
+
+@function cl($key) {
+  @return map-get($colors, $key);
+}

@@ -1,0 +1,61 @@
+<div class="fv">
+    <div class="fv__inner">
+        <div class="fv__contents">
+            <div class="fv__text">
+                <h2 class="fv__title">shoes for runners</h2>
+                <p class="fv__desc">あなたに合ったシューズ<br>を提案します</p>
+            </div>
+            <div class="fv__img">
+                <%= image_tag "runner.svg", :alt => '走っている人' %>
+            </div>
+        </div>
+        <div class="fv__btn ">
+            <%= button_to 'シューズを探してみる', '#', method: :get, class: "fv__link" %>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="features">
+    <div class="features__inner">
+        <div class="features__contents">
+            <ul class="features__list">
+                <li class="features__item">
+                    <div class="features__img-text">
+                        <div class="features__img1">
+                            <%= image_tag "Q&A.svg", :alt => '疑問に答える人' %>
+                        </div>
+                        <div class="features__text">
+                        簡単な質問に答えるだけで<br>あなたに合ったシューズを提案<br>します。
+                        </div>
+                    </div>
+                </li>
+                <li class="features__item">
+                    <div class="features__img-text features__reverse">
+                        <div class="features__img2">
+                            <%= image_tag "bookmark.svg", :alt => 'ブックマークする人' %>
+                        </div>
+                        <div class="features__text">
+                        気になったシューズが合ったら、<br>お気に入り登録をしましょう
+                        </div>
+                    </div>
+                </li>
+                <li class="features__item">
+                    <div class="features__img-text">
+                        <div class="features__img3">
+                            <%= image_tag "comments.svg", :alt => 'コメントする人' %>
+                        </div>
+                        <div class="features__text">
+                        シューズを使ってみたら、<br>ぜひ感想を残してください
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="features__btn ">
+            <%= button_to 'シューズを探してみる', '#', method: :get, class: "features__link" %>
+        </div>
+        </div>
+    </div>
+</div>
