@@ -49,7 +49,7 @@
         margin-bottom: 25px;
 
         @include mq(s) {
-          width: 100%;
+            width: 100%;
         }
         &:focus{
             border: 2px solid blue; 
@@ -70,10 +70,10 @@
         cursor: pointer;
         margin-top: 20px;
         &:hover {
-          opacity: 0.7;
-          transition: 0.3s;
+            opacity: 0.7;
+            transition: 0.3s;
         }
-      }
+    }
     &__link{
         font-size: 2.2rem;
         margin-top: 30px;
