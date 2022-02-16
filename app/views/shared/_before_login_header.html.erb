@@ -1,25 +1,25 @@
 <header class="header">
-        <div class="header__inner">
-            <div class="header__logo">
-                <%= link_to root_path do %>
-                    <%= image_tag "shoes.svg", class: "header__img", :alt => 'ロゴ画像' %>
-                    <h1 class="header__title">shoes for runners</h1>
-                <% end %>
-            </div>
-            <div class="header__gnav-btn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="header__bglayer"></div>
-            <nav class="header__nav">
-                <ul class="header__list">
-                    <li><%= link_to 'シューズを探してみる', '#', class: "header__item" %></li>
-                    <li><%= link_to 'シューズ一覧', '#', class: "header__item" %></li>
-                    <li><%= link_to 'ログイン', login_path, class: "header__item" %></li>
-                </ul>
-            </nav>
+    <div class="header__inner">
+        <div class="header__logo">
+            <%= link_to root_path do %>
+                <%= image_tag "shoes.svg", class: "header__img", :alt => 'ロゴ画像' %>
+                <h1 class="header__title">shoes for runners</h1>
+            <% end %>
         </div>
-    </header>
+        <div class="header__gnav-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="header__bglayer"></div>
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li><%= link_to 'シューズを探してみる', '#', class: "header__item" %></li>
+                <li><%= link_to 'シューズ一覧', '#', class: "header__item" %></li>
+                <li><%= link_to 'ログイン', login_path, class: "header__item" %></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
 <%= javascript_pack_tag "pages/header", defer: true %>
