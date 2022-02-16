@@ -1,0 +1,93 @@
+
+@import "base/base";
+@import "base/reset";
+@import "mixin/color";
+@import "mixin/font";
+@import "mixin/media";
+
+// ログインページ
+
+.login{
+    &__inner {
+        display: block;
+        width: 100%;
+        max-width: 950px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 160px 20px 70px;
+    }
+    &__title {
+        text-align: center;
+        font-size: 3.2rem;
+        font-weight: bold;
+    }
+    &__form {
+        padding: 30px 60px 20px;
+        @include mq(m) {
+        padding: 30px 30px 20px;
+        }
+    }
+    &__form-item{
+        display: flex;
+        flex-direction: column;
+        margin:0 auto;
+    }
+    &__form-title {
+        font-weight: bold;
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+    &__text-box {
+        width: 100%;
+        padding: 10px 15px;
+        font-size: 16px;
+        border-radius: 3px;
+        border: 2px solid #ddd;
+        box-sizing: border-box;
+        font-size: 2rem;
+        height: 43px;
+        margin-bottom: 25px;
+
+        @include mq(s) {
+            width: 100%;
+        }
+        &:focus{
+            border: 2px solid blue; 
+            z-index: 10;
+            outline: 0;
+        }
+    }
+    &__btn {
+        text-align: center;
+        color: cl(white);
+        background:  blue;
+        width: 120px;
+        padding: 8px 0 10px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        border-radius: 20px;
+        font-size: 2rem;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 20px;
+        &:hover {
+            opacity: 0.7;
+            transition: 0.3s;
+        }
+    }
+    &__user-page{
+        font-size: 2.2rem;
+        margin-top: 30px;
+        text-align: center;
+        @include mq(s) {
+            font-size: 2rem;
+        }
+    }
+    &__forgot-password{
+        font-size: 2.2rem;
+        margin-top: 30px;
+        text-align: center;
+        @include mq(s) {
+            font-size: 2rem;
+        }
+    }
+}

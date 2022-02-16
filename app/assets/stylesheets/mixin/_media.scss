@@ -1,0 +1,15 @@
+// RESPONSIVE
+// @include mq(キー(sなど)
+//--------------------------------------------------
+
+$breakpoint: (
+  s: "screen and (max-width: 767px)",
+  m: "screen and (max-width: 1024px)",
+  l: "screen and (max-width: 1280px)",
+);
+
+@mixin mq($bp) {
+  @media #{map-get($breakpoint, $bp)} {
+    @content;
+  }
+}
