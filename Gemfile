@@ -7,7 +7,6 @@ gem 'sorcery'
 gem 'pry-byebug'
 gem 'slim-rails'
 gem 'jquery-rails'
-gem 'faker'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'

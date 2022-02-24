@@ -70,8 +70,6 @@ GEM
     concurrent-ruby (1.1.9)
     crass (1.0.6)
     erubi (1.10.0)
-    faker (2.19.0)
-      i18n (>= 1.6, < 2)
     faraday (1.9.3)
       faraday-em_http (~> 1.0)
       faraday-em_synchrony (~> 1.0)
@@ -241,7 +239,6 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.4.4)
   byebug
-  faker
   jbuilder (~> 2.7)
   jquery-rails
   listen (~> 3.3)
