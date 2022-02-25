@@ -1,0 +1,15 @@
+<!-- シューズ一覧 -->
+<div class="shoes-list">
+  <div class="shoes-list__inner">
+    <div>
+      <h2 class="shoes-list__title">シューズ一覧</h2>
+    </div>
+    <div class="shoes-list__item">
+        <% if @shoes.present? %>
+          <%= render @shoes %>
+        <% else %>
+          <p><%= t('.no_result') %></p>
+        <% end %>
+    </div>
+  </div>
+</div>

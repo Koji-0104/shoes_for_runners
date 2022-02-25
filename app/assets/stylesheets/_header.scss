@@ -5,145 +5,145 @@
 @import "mixin/media";
 
 .header {
-    position: fixed;
-    top: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 94px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  background-color: cl(white);
+  z-index: 3;
+  &__inner {
     width: 100%;
-    height: 94px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-    background-color: cl(white);
-    z-index: 3;
-    &__inner {
-      width: 100%;
-      max-width: 1020px;
-      margin-left: auto;
-      margin-right: auto;
-      align-items: center;
-      height: 100%;
+    max-width: 1020px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    @include mq(m) {
+      padding: 0 50px;
+    }
+    @include mq(s) {
+      padding: 0 20px;
+    }
+  }
+  &__logo {
+    a {
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      padding: 0 30px;
+    }
+  }
+  &__img {
+    width: 50px;
+    height: 50px;
+    margin-right: 16px;
+  }
+  &__title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    @include mq(s) {
+      font-size: 2.3rem;
+    }
+  }
+  &__nav {
+    width: 650px;
+    @include mq(m) {
+      position: fixed;
+      top: 0;
+      right: -300px;
+      width: 300px;
+      height: 100vh;
+      padding-top: 95px;
+      background: rgba(0, 0, 0, 0.9);
+      font-size: 1.6rem;
+      transition: 0.6s;
+      z-index: 2;
+    }
+    &.open {
       @include mq(m) {
-        padding: 0 50px;
-      }
-      @include mq(s) {
-        padding: 0 20px;
+        right: 0px;
       }
     }
-    &__logo {
-      a {
-        display: flex;
-        align-items: center;
-      }
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    @include mq(m) {
+      flex-direction: column;
+      font-size: 2.4rem;
+      text-align: center;
+      color: cl(white);
     }
-    &__img {
-      width: 50px;
-      height: 50px;
-      margin-right: 16px;
+  }
+  &__item {
+    font-weight: bold;
+    @include mq(m) {
+      margin-top: 40px;
     }
-    &__title {
-      font-size: 2.5rem;
-      font-weight: bold;
-      @include mq(s) {
-        font-size: 2.3rem;
-      }
-    }
-    &__nav {
-      width: 650px;
-      @include mq(m) {
-        position: fixed;
-        top: 0;
-        right: -300px;
-        width: 300px;
-        height: 100vh;
-        padding-top: 95px;
-        background: rgba(0, 0, 0, 0.9);
-        font-size: 1.6rem;
-        transition: 0.6s;
-        z-index: 2;
-      }
+  }
+  &__gnav-btn {
+    display: none;
+    @include mq(m) {
+      display: inline-block;
+      position: relative;
+      width: 47px;
+      height: 47px;
+      cursor: pointer;
+      transition: all 0.4s;
+      z-index: 4;
       &.open {
-        @include mq(m) {
-          right: 0px;
-        }
-      }
-    }
-    &__list {
-      display: flex;
-      justify-content: space-between;
-      @include mq(m) {
-        flex-direction: column;
-        font-size: 2.4rem;
-        text-align: center;
-        color: cl(white);
-      }
-    }
-    &__item {
-      font-weight: bold;
-      @include mq(m) {
-        margin-top: 40px;
-      }
-    }
-    &__gnav-btn {
-      display: none;
-      @include mq(m) {
-        display: inline-block;
-        position: relative;
-        width: 47px;
-        height: 47px;
-        cursor: pointer;
-        transition: all 0.4s;
-        z-index: 4;
-        &.open {
-          span {
-            background: cl(white);
-            &:nth-child(1) {
-              transform: rotate(45deg);
-              top: 50%;
-            }
-            &:nth-child(2) {
-              opacity: 0;
-            }
-            &:nth-child(3) {
-              transform: rotate(-45deg);
-              top: 50%;
-            }
-          }
-        }
         span {
-          position: absolute;
-          width: 100%;
-          height: 3px;
-          display: inline-block;
-          background: cl(gray);
-          border-radius: 10px;
-          transition: all 0.4s;
+          background: cl(white);
           &:nth-child(1) {
-            top: 20%;
-          }
-          &:nth-child(2) {
+            transform: rotate(45deg);
             top: 50%;
           }
+          &:nth-child(2) {
+            opacity: 0;
+          }
           &:nth-child(3) {
-            top: 80%;
+            transform: rotate(-45deg);
+            top: 50%;
           }
         }
       }
-    }
-    &__bglayer {
-      display: none;
-      &.open {
-        @include mq(m) {
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          display: block;
-          background: cl(gray);
-          opacity: 0.3;
-          z-index: 1;
+      span {
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        display: inline-block;
+        background: cl(gray);
+        border-radius: 10px;
+        transition: all 0.4s;
+        &:nth-child(1) {
+          top: 20%;
+        }
+        &:nth-child(2) {
+          top: 50%;
+        }
+        &:nth-child(3) {
+          top: 80%;
         }
       }
     }
   }
+  &__bglayer {
+    display: none;
+    &.open {
+      @include mq(m) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        background: cl(gray);
+        opacity: 0.3;
+        z-index: 1;
+      }
+    }
+  }
+}
