@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2022_02_18_113402) do
     t.text "img_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["name"], name: "index_shoes_on_name", unique: true
   end
 
   create_table "users", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
