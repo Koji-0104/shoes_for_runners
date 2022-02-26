@@ -4,22 +4,22 @@
 @import "mixin/font";
 @import "mixin/media";
 
-//シューズ一覧
+//シューズ一覧画面
 .shoes-list{
   &__inner {
     display: block;
     width: 100%;
-    max-width: 917px;
+    max-width: 1020px;
     margin-left: auto;
     margin-right: auto;
     padding: 180px 20px 50px;
     @include mq(m) {
-    width: 645px;
+    width: 750px;
     padding: 180px 20px 70px;
     text-align: center;
   }
   @include mq(s) {
-    width: 300px;
+    width: 360px;
     padding: 180px 20px 70px;
   }
 }
@@ -42,14 +42,14 @@
   }
   a:hover {
     opacity: 1;
-}
+  }
   border: 1px solid;
   border-radius: 10px;
   padding: 3px 3px 15px 3px;
-  margin: 20px 20px;
+  margin: 10px 6px;
   @include mq(m) {
     padding: 8px 8px 15px 8px;
-    margin: 20px 20px;
+    margin: 20px 16px;
   }
   @include mq(s) {
     padding: 5px 5px 15px 5px;
@@ -79,6 +79,71 @@
     &:hover {
         opacity: 0.7;
         transition: 0.3s;
+    }
+  }
+  &__card-link{
+    display: block;
+    width: 100%;
+  }
+}
+
+//シューズ詳細
+.shoes-detail{
+  img:hover {
+    opacity: 1;
+  }
+  a:hover {
+    opacity: 1;
+  }
+  &__inner {
+    display: block;
+    width: 100%;
+    max-width: 1020px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 180px 20px 50px;
+    text-align: center;
+    @include mq(m) {
+    width: 750px;
+    padding: 180px 20px 70px;
+    text-align: center;
+  }
+  @include mq(s) {
+    width: 360px;
+    padding: 180px 20px 70px;
+  }
+  }
+  &__title {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    @include mq(m) {
+      font-size: 4rem;
+    }
+    @include mq(s) {
+      font-size: 3.8rem;
+    }
+  }
+  &__causion{
+    font-size: 2.1rem;
+    font-weight: bold;
+    @include mq(m) {
+      font-size: 1.8rem;
+    }
+    @include mq(s) {
+      font-size: 1.7rem;
+    }
+  }
+  &__name{
+    margin-top: 50px;
+    font-size: 4.2rem;
+    font-weight: bold;
+    @include mq(m) {
+      font-size: 3.5rem;
+    }
+    @include mq(s) {
+      font-size: 3.3rem;
     }
   }
 }
