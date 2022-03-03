@@ -6,7 +6,9 @@ ruby '3.0.3'
 gem 'sorcery'
 gem 'pry-byebug'
 gem 'slim-rails'
+gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails'
+gem 'rails-i18n'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'

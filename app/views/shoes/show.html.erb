@@ -1,7 +1,7 @@
 <div class="shoes-detail">
   <div id="shoe-id-<%= @shoe.id %>">
     <div class="shoes-detail__inner">
-      <h1 class="shoes-detail__title">シューズ詳細</h1>
+      <h1 class="shoes-detail__title"><%= t '.title' %></h1>
       <!-- 掲示板内容 -->
         <div class="shoes-detail__img">
           <a href=<%= @shoe.url %> target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  ><img src=<%= @shoe.img_url %> border="0" style="margin:2px" alt="" title=""></a>
@@ -13,4 +13,10 @@
       </div>
     </div>
   </div>
+
+  <!-- コメントフォーム -->
+  <%= render 'comments/form', { shoe: @shoe, comment: @comment } %>
+
+  <!-- コメントエリア -->
+  <%= render 'comments/comments', { comments: @comments } %>
 </div>

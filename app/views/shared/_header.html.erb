@@ -19,7 +19,7 @@
         <li><%= link_to 'マイページ', '#', class: "header__item" %></li>
         <li><%= link_to 'お気に入り', '#', class: "header__item" %></li>
         <li><%= link_to 'レビュー', '#', class: "header__item" %></li>
-        <li><%= link_to 'ログアウト', logout_path, method: :delete, class: "header__item" %></li>
+        <li><%= link_to (t 'defaults.logout'), logout_path, method: :delete, class: "header__item" %></li>
       </ul>
     </nav>
   </div>
