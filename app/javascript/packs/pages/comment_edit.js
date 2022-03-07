@@ -52,6 +52,9 @@ $(function() {
                   comment: {
                       body: body
                   }
+              },
+              headers: {
+                'X-CSRF-Token' : $('meta[name="csrf-token"]').attr('content')
               }
           }).done(function (result) {
               resolve(result)
