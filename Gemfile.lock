@@ -180,9 +180,6 @@ GEM
     rails-i18n (7.0.2)
       i18n (>= 0.7, < 2)
       railties (>= 6.0.0, < 8)
-    rails_same_site_cookie (0.1.9)
-      rack (>= 1.5)
-      user_agent_parser (~> 2.6)
     railties (6.1.4.4)
       actionpack (= 6.1.4.4)
       activesupport (= 6.1.4.4)
@@ -232,7 +229,6 @@ GEM
     turbolinks-source (5.2.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
-    user_agent_parser (2.9.0)
     web-console (4.2.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -264,7 +260,6 @@ DEPENDENCIES
   rack-mini-profiler (~> 2.0)
   rails (~> 6.1.4, >= 6.1.4.4)
   rails-i18n
-  rails_same_site_cookie
   sass-rails (>= 6)
   slim-rails
   sorcery

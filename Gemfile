@@ -9,7 +9,6 @@ gem 'slim-rails'
 gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails'
 gem 'rails-i18n'
-gem 'rails_same_site_cookie'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.4', '>= 6.1.4.4'
