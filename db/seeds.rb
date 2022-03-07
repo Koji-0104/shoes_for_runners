@@ -14,3 +14,36 @@
     img_url: "https://hbb.afl.rakuten.co.jp/hgb/247897ef.7a7fceb1.247897f0.a861c831/?me_id=1271197&item_id=10403218&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fsportsauthority%2Fcabinet%2Fimg%2F1430%2F65903254.jpg%3F_ex%3D300x300&s=300x300&t=pict",
   )
 end
+
+20.times do |n|
+  User.create!(
+    email: "test#{n + 1}@test.com",
+    name: "テスト太郎#{n + 1}",
+    password:"aaaaaaa",
+    password_confirmation:"aaaaaaa",
+  )
+end
+
+20.times do |n|
+  Comment.create!(
+    body: "テストテストテスト",
+    user_id: 1,
+    shoe_id: n+1,
+  )
+end
+
+20.times do |n|
+  Comment.create!(
+    body: "テストテストテスト",
+    user_id: 2,
+    shoe_id: n+1,
+  )
+end
+
+20.times do |n|
+  Comment.create!(
+    body: "テストテストテスト",
+    user_id: 3,
+    shoe_id: n+1,
+  )
+end
