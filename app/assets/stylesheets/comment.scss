@@ -4,38 +4,22 @@
 @import "mixin/font";
 @import "mixin/media";
 
-// ユーザー登録ページ
-.registration{
+//コメントフォーム
+.comment-form{
   &__inner {
     display: block;
     width: 100%;
-    max-width: 950px;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
-    padding: 100px 20px 70px;
+    padding: 20px 20px 40px;
   }
   &__title {
-    text-align: center;
-    font-size: 3.2rem;
     font-weight: bold;
-  }
-  &__form {
-    padding: 30px 60px 20px;
-    @include mq(m) {
-    padding: 30px 30px 20px;
-    }
-  }
-  &__form-item{
-    display: flex;
-    flex-direction: column;
-    margin:0 auto;
-  }
-  &__form-title {
-    font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 3.0rem;
     margin-bottom: 10px;
   }
-  &__text-box {
+  &__text-area {
     width: 100%;
     padding: 10px 15px;
     font-size: 16px;
@@ -43,10 +27,11 @@
     border: 2px solid #ddd;
     box-sizing: border-box;
     font-size: 2rem;
-    height: 43px;
-    margin-bottom: 25px;
+    height: 100px;
+    margin-bottom: 15px;
     @include mq(s) {
         width: 100%;
+        height: 200px;
     }
     &:focus{
       border: 2px solid blue;
@@ -71,9 +56,50 @@
       transition: 0.3s;
     }
   }
-  &__link{
-    font-size: 2.2rem;
-    margin-top: 30px;
-    text-align: center;
+}
+
+//コメント一覧
+.comments{
+  &__inner {
+    display: block;
+    width: 100%;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 20px 70px;
+  }
+  &__user-name{
+    font-size: 2.0rem;
+  }
+}
+
+//コメント
+.comment{
+  &__user-name{
+    font-size: 2.0rem;
+  }
+  &__text-contents{
+    width: 610px;
+    font-size: 2.0rem;
+    word-break: break-all;
+    @include mq(s) {
+      font-size: 1.7rem;
+    }
+  }
+  &__icons{
+    width: 40px;
+  }
+  &__items{
+    display: flex;
+    float: right;
+    @include mq(s) {
+      float: left;
+  }
+  }
+  &__item{
+    margin-left: 2px;
+  }
+  &__img{
+    width: 32px;
   }
 }

@@ -1,26 +1,26 @@
 <div class="login">
   <div class="login__inner">
-    <h2 class="login__title">ログイン</h2>
+    <h2 class="login__title"><%= t '.title' %></h2>
       <%= form_with url: login_path, local: true do |f| %>
         <div class="login__form">
           <ul class="login__form-list">
             <li class="login__form-item">
-              <%= f.label :email, class: 'login__form-title' %>
+              <%= f.label :email, User.human_attribute_name(:email), class: 'login__form-title' %>
               <%= f.email_field :email, class: 'login__text-box' %>
             </li>
             <li class="login__form-item">
-              <%= f.label :password, class: 'login__form-title' %>
+              <%= f.label :password, User.human_attribute_name(:password), class: 'login__form-title' %>
               <%= f.password_field :password, class: 'login__text-box' %>
             </li>
           </ul>
-          <%= f.submit 'ログイン', class: 'login__btn' %>
+          <%= f.submit (t 'defaults.login'), class: 'login__btn' %>
         </div>
       <% end %>
       <div class='login__user-page'>
-        <%= link_to '登録ページへ', new_user_path %>
+        <%= link_to (t '.to_register_page'), new_user_path %>
       </div>
       <div class='login__forgot-password'>
-        <a href="#">パスワードをお忘れの方はこちら</a>
+        <a href="#"><%= t '.password_forget' %></a>
       </div>
   </div>
 </div>

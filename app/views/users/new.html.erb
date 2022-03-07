@@ -1,7 +1,8 @@
 <div class="registration">
   <div class="registration__inner">
-    <h2 class="registration__title">ユーザー登録</h2>
+    <h2 class="registration__title"><%= t '.title' %></h2>
       <%= form_with model: @user, local: true do |f| %>
+        <%= render 'shared/error_messages', object: f.object %>
         <div class="registration__form">
           <ul class="registration__form-list">
             <li class="registration__form-item">
@@ -21,11 +22,11 @@
               <%= f.password_field :password_confirmation, class: 'registration__text-box' %>
             </li>
           </ul>
-          <%= f.submit '登録', class: 'registration__btn' %>
+          <%= f.submit (t 'defaults.register'), class: 'registration__btn' %>
         </div>
       <% end %>
       <div class='registration__link'>
-        <%= link_to 'ログインページへ', login_path %>
+        <%= link_to (t '.to_login_page'), login_path %>
       </div>
   </div>
 </div>

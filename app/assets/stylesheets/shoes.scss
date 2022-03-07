@@ -12,15 +12,15 @@
     max-width: 1020px;
     margin-left: auto;
     margin-right: auto;
-    padding: 180px 20px 50px;
+    padding: 130px 20px 50px;
     @include mq(m) {
     width: 750px;
-    padding: 180px 20px 70px;
+    padding: 85px 20px 70px;
     text-align: center;
   }
   @include mq(s) {
     width: 360px;
-    padding: 180px 20px 70px;
+    padding: 70px 20px 70px;
   }
 }
   &__title {
@@ -101,16 +101,16 @@
     max-width: 1020px;
     margin-left: auto;
     margin-right: auto;
-    padding: 180px 20px 50px;
+    padding: 120px 20px 50px;
     text-align: center;
     @include mq(m) {
     width: 750px;
-    padding: 180px 20px 70px;
+    padding: 120px 20px 70px;
     text-align: center;
   }
   @include mq(s) {
     width: 360px;
-    padding: 180px 20px 70px;
+    padding: 120px 20px 70px;
   }
   }
   &__title {
