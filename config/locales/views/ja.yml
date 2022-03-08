@@ -13,6 +13,10 @@ ja:
       require_login: 'ログインしてください'
       created: "%{item}を作成しました"
       not_created: "%{item}を作成できませんでした"
+      deleted: "%{item}を削除しました"
+      delete_confirm: '削除しますか？'
+      update_confirm: '更新しますか？'
+      not_authorized: '権限がありません'
   users:
     new:
       title: 'ユーザー登録'
