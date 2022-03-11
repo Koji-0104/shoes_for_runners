@@ -5,11 +5,11 @@
       <h2 class="shoes-list__title"><%= t '.title' %></h2>
     </div>
     <div class="shoes-list__item">
-        <% if @shoes.present? %>
-          <%= render @shoes %>
-        <% else %>
-          <p><%= t('.no_result') %></p>
-        <% end %>
+      <% if @shoes.present? %>
+        <%= render @shoes %>
+      <% else %>
+        <p><%= t('.no_result') %></p>
+      <% end %>
     </div>
   </div>
 </div>

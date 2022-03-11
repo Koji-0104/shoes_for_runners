@@ -41,7 +41,13 @@ ja:
     show:
       title: 'シューズ詳細'
     bookmarks:
-      title: 'ブックマーク一覧'
+      title: 'お気に入り一覧'
+      no_result: 'ブックマーク中のシューズがありません。'
+  bookmarks:
+    create:
+      success: 'ブックマークしました'
+    destroy:
+      success: 'ブックマークを外しました'
   profiles:
     show:
       title: 'プロフィール'

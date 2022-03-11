@@ -1,0 +1,6 @@
+<%= link_to bookmark_path(current_user.bookmarks.find_by(shoe_id: shoe.id)),
+          id: "js-bookmark-button-for-shoe-#{shoe.id}",
+          method: :delete,
+          remote: true do %>
+  <%= image_tag "bookmark-icon.svg", :alt => 'ブックマークしていることを表すアイコン' %>
+<% end %>
