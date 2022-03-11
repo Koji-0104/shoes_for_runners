@@ -3,14 +3,16 @@
     <div class="shoes-detail__inner">
       <h1 class="shoes-detail__title"><%= t '.title' %></h1>
       <!-- 掲示板内容 -->
-        <div class="shoes-detail__img">
-          <a href=<%= @shoe.url %> target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  ><img src=<%= @shoe.img_url %> border="0" style="margin:2px" alt="" title=""></a>
-        </div>
-        <div class="shoes-detail__causion">
-          ※上記画像をクリックすると<br>楽天商品ページへと移動します
-        </div>
-        <h2 class="shoes-detail__name"><%= @shoe.name %></h2>
+      <div class="shoes-detail__bookmark-btn">
+        <%= render 'bookmark_button', shoe: @shoe %>
       </div>
+      <div class="shoes-detail__img">
+        <a href=<%= @shoe.url %> target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  ><img src=<%= @shoe.img_url %> border="0" style="margin:2px" alt="" title=""></a>
+      </div>
+      <div class="shoes-detail__causion">
+        ※上記画像をクリックすると<br>楽天商品ページへと移動します
+      </div>
+      <h2 class="shoes-detail__name"><%= @shoe.name %></h2>
     </div>
   </div>
 

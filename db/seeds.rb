@@ -18,7 +18,7 @@ end
 20.times do |n|
   User.create!(
     email: "test#{n + 1}@test.com",
-    name: "テスト太郎#{n + 1}",
+    name: "テストさん#{n + 1}",
     password:"aaaaaaa",
     password_confirmation:"aaaaaaa",
   )

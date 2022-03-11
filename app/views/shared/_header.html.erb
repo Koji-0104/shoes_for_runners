@@ -17,7 +17,7 @@
         <li><%= link_to 'シューズを探してみる', '#', class: "header__item" %></li>
         <li><%= link_to 'シューズ一覧', shoes_path, class: "header__item" %></li>
         <li><%= link_to 'マイページ', '#', class: "header__item" %></li>
-        <li><%= link_to 'お気に入り', '#', class: "header__item" %></li>
+        <li><%= link_to t('shoes.bookmarks.title'), bookmarks_shoes_path, class: "header__item" %></li>
         <li><%= link_to 'レビュー', '#', class: "header__item" %></li>
         <li><%= link_to (t 'defaults.logout'), logout_path, method: :delete, class: "header__item" %></li>
       </ul>

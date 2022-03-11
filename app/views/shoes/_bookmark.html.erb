@@ -1,0 +1,6 @@
+<%= link_to bookmarks_path(shoe_id: shoe.id),
+          id: "js-bookmark-button-for-shoe-#{shoe.id}",
+          method: :post,
+          remote: true do %>
+  <%= image_tag "unbookmark-icon.svg", :alt => 'ブックマークしていないことを表すアイコン' %>
+<% end %>
