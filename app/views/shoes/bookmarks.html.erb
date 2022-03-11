@@ -1,0 +1,15 @@
+<!-- ブックマークしたシューズ一覧 -->
+<div class="shoes-list">
+  <div class="shoes-list__inner">
+    <div>
+      <h2 class="shoes-list__title"><%= t '.title' %></h2>
+    </div>
+    <div class="shoes-list__item">
+      <% if @bookmark_shoes.present? %>
+        <%= render @bookmark_shoes %>
+      <% else %>
+        <p><%= t('.no_result') %></p>
+      <% end %>
+    </div>
+  </div>
+</div>
