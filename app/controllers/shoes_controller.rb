@@ -12,4 +12,8 @@ class ShoesController < ApplicationController
   def bookmarks
     @bookmark_shoes = current_user.bookmark_shoes.includes(:user).order(created_at: :asc)
   end
+
+  def comments
+    @comment_shoes = current_user.comment_shoes.includes(:user).order(created_at: :asc)
+  end
 end

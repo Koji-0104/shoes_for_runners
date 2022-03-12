@@ -6,7 +6,7 @@ class CommentsController < ApplicationController
     if comment.save
       redirect_to shoe_path(comment.shoe), success: t('defaults.message.created', item: Comment.model_name.human)
     else
-      redirect_to shoe_path(comment.shoe), danger: t('defaults.message.not_created', item: Comment.model_name.human)
+      redirect_to shoe_path(comment.shoe), danger: t('defaults.message.not_created_comment', item: Comment.model_name.human)
     end
   end
 

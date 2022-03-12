@@ -13,6 +13,7 @@ ja:
       require_login: 'ログインしてください'
       created: "%{item}を作成しました"
       not_created: "%{item}を作成できませんでした"
+      not_created_comment: "%{item}は1つのシューズにつき1回まで可能です"
       deleted: "%{item}を削除しました"
       delete_confirm: '削除しますか？'
       update_confirm: '更新しますか？'
@@ -43,11 +44,14 @@ ja:
     bookmarks:
       title: 'お気に入り一覧'
       no_result: 'ブックマーク中のシューズがありません。'
+    comments:
+      title: 'コメント一覧'
+      no_result: 'コメントしたシューズがありません。'
   bookmarks:
     create:
-      success: 'ブックマークしました'
+      success: 'お気に入り登録しました'
     destroy:
-      success: 'ブックマークを外しました'
+      success: 'お気に入り登録を外しました'
   profiles:
     show:
       title: 'プロフィール'
