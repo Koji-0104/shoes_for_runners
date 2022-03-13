@@ -13,6 +13,10 @@ class UsersController < ApplicationController
     end
   end
 
+  def comments
+    @user_shoes = current_user.comment_shoes.includes(:user).order(created_at: :asc)
+  end
+
   private
 
   def user_params

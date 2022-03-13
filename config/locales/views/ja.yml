@@ -6,6 +6,7 @@ ja:
     post: '投稿'
     show: '詳細'
     edit: '編集'
+    update: '更新する'
     delete: '削除'
     password_reset: 'パスワードリセット'
     unspecified: '指定なし'
@@ -13,7 +14,10 @@ ja:
       require_login: 'ログインしてください'
       created: "%{item}を作成しました"
       not_created: "%{item}を作成できませんでした"
-      not_created_comment: "%{item}は1つのシューズにつき1回まで可能です"
+      not_created_comment: "%{item}投稿は1つのシューズにつき1回まで可能です"
+      updated_user: "%{item}アカウントを更新しました"
+      updated: "%{item}を更新しました"
+      not_updated: "%{item}を更新できませんでした"
       deleted: "%{item}を削除しました"
       delete_confirm: '削除しますか？'
       update_confirm: '更新しますか？'
@@ -25,6 +29,9 @@ ja:
     create:
       success: 'ユーザー登録が完了しました'
       fail: 'ユーザー登録に失敗しました'
+    comments:
+      title: 'コメント一覧'
+      no_result: 'コメントしたシューズがありません。'
   user_sessions:
     new:
       title: 'ログイン'
@@ -44,14 +51,13 @@ ja:
     bookmarks:
       title: 'お気に入り一覧'
       no_result: 'ブックマーク中のシューズがありません。'
-    comments:
-      title: 'コメント一覧'
-      no_result: 'コメントしたシューズがありません。'
   bookmarks:
     create:
       success: 'お気に入り登録しました'
     destroy:
       success: 'お気に入り登録を外しました'
-  profiles:
+  mypages:
     show:
-      title: 'プロフィール'
+      title: 'マイページ'
+    edit:
+      title: 'アカウント編集'
