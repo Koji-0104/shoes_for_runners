@@ -1,0 +1,21 @@
+<div class="mypage-edit">
+  <div class="mypage-edit__inner">
+    <h1 class="mypage-edit__title"><%= t('.title') %></h1>
+    <%= form_with model: @user, url: mypage_path, local: true do |f| %>
+      <%= render 'shared/error_messages', object: f.object %>
+      <div class="mypage-edit__form">
+        <ul class="mypage-edit__form-list">
+          <li class="mypage-edit__form-item">
+            <%= f.label :name, class: 'mypage-edit__form-title' %>
+            <%= f.text_field :name, class: 'mypage-edit__text-box' %>
+          </li>
+          <li class="mypage-edit__form-item">
+            <%= f.label :email, class: 'mypage-edit__form-title' %>
+            <%= f.email_field :email, class: 'mypage-edit__text-box' %>
+          </li>
+        </ul>
+        <%= f.submit (t 'defaults.update'), class: 'mypage-edit__btn' %>
+      </div>
+    <% end %>
+  </div>
+</div>
