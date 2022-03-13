@@ -15,11 +15,11 @@
     <nav class="header__nav">
       <ul class="header__list">
         <li><%= link_to 'シューズを探してみる', '#', class: "header__item" %></li>
-        <li><%= link_to 'シューズ一覧', shoes_path, class: "header__item" %></li>
-        <li><%= link_to 'マイページ', '#', class: "header__item" %></li>
+        <li><%= link_to t('shoes.index.title'), shoes_path, class: "header__item" %></li>
+        <li><%= link_to t('mypages.show.title'), mypage_path, class: "header__item" %></li>
         <li><%= link_to t('shoes.bookmarks.title'), bookmarks_shoes_path, class: "header__item" %></li>
-        <li><%= link_to 'レビュー', '#', class: "header__item" %></li>
-        <li><%= link_to (t 'defaults.logout'), logout_path, method: :delete, class: "header__item" %></li>
+        <li><%= link_to t('users.comments.title'), comments_users_path, class: "header__item" %></li>
+        <li><%= link_to t('defaults.logout'), logout_path, method: :delete, class: "header__item" %></li>
       </ul>
     </nav>
   </div>

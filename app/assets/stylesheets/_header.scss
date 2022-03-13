@@ -26,7 +26,7 @@
       padding: 0 50px;
     }
     @include mq(s) {
-      padding: 0 20px;
+      padding: 0 30px;
     }
   }
   &__logo {
@@ -48,7 +48,7 @@
     }
   }
   &__nav {
-    width: 650px;
+    width: 680px;
     @include mq(m) {
       position: fixed;
       top: 0;
