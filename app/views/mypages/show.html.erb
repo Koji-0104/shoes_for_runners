@@ -1,0 +1,40 @@
+<div class="mypage">
+  <div class="mypage__inner">
+    <h1 class="mypage__title"><%= t('.title') %></h1>
+    <div class="mypage__table">
+      <table class="price__table-inner">
+        <tr class="mypage__table-row1">
+          <td class="mypage__table-text1"><%= t(User.human_attribute_name(:name)) %></td>
+          <td class="mypage__table-text2"><%= current_user.decorate.name %></td>
+        </tr>
+        <tr class="mypage__table-row2">
+          <td class="mypage__table-text1"><%= t(User.human_attribute_name(:email)) %></td>
+          <td class="mypage__table-text2"><%= current_user.email %></td>
+        </tr>
+      </table>
+    </div>
+    <div class='mypage__edit-btn'>
+      <%= link_to t('defaults.edit'), edit_mypage_path, class: 'mypage__edit-link' %>
+    </div>
+    <div class="mypage__contens">
+      <div class="mypage__contens-inner">
+        <div class="mypage__bookmarks">
+          <%= link_to bookmarks_shoes_path, class: "mypage__bookmarks-btn", method: :get do %>
+            <%= image_tag "bookmark-icon.svg", :alt => 'ブックマークしていることを表すアイコン', class: "mypage__bookmarks-link" %>
+            <div class= "mypage__bookmarks-count">
+              <%= current_user.bookmarks.count %>
+            </div>
+          <% end %>
+        </div>
+        <div class="mypage__comments">
+          <%= link_to comments_users_path, class: "mypage__comments-btn", method: :get do %>
+            <%= image_tag "pencil.svg", :alt => '鉛筆', class: "mypage__comments-link" %>
+            <div class= "mypage__comments-count">
+              <%= current_user.comments.count %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

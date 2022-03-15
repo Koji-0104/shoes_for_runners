@@ -18,6 +18,7 @@ ja:
       updated_user: "%{item}アカウントを更新しました"
       updated: "%{item}を更新しました"
       not_updated: "%{item}を更新できませんでした"
+      not_updated_user: "%{item}アカウントを更新できませんでした"
       deleted: "%{item}を削除しました"
       delete_confirm: '削除しますか？'
       update_confirm: '更新しますか？'
