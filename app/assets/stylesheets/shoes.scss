@@ -12,23 +12,41 @@
     max-width: 1020px;
     margin-left: auto;
     margin-right: auto;
-    padding: 130px 20px 50px;
+    padding: 100px 40px 50px;
     @include mq(m) {
     width: 750px;
-    padding: 85px 20px 70px;
-    text-align: center;
+    padding: 85px 20px 30px;
   }
   @include mq(s) {
     width: 360px;
     padding: 70px 20px 70px;
   }
-}
+  }
   &__title {
     text-align: center;
     font-size: 3.2rem;
     font-weight: bold;
-    padding-bottom: 80px;
-}
+    margin-bottom: 70px;
+  }
+  &__explanation{
+    font-size: 1.8rem;
+  }
+  &__items-inner {
+    display: block;
+    width: 100%;
+    max-width: 1020px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 20px 50px;
+    @include mq(m) {
+    width: 750px;
+    padding: 50px 20px 70px;
+  }
+  @include mq(s) {
+    width: 360px;
+    padding: 70px 20px 70px;
+  }
+  }
   &__item{
     display: flex;
     flex-wrap: wrap;
@@ -109,8 +127,8 @@
     text-align: center;
   }
   @include mq(s) {
-    width: 360px;
-    padding: 120px 20px 70px;
+    width: 365px;
+    padding: 120px 15px 70px;
   }
   }
   &__title {
@@ -138,6 +156,7 @@
   &__causion{
     font-size: 2.1rem;
     font-weight: bold;
+    margin-bottom: 50px;
     @include mq(m) {
       font-size: 1.8rem;
     }
@@ -145,15 +164,67 @@
       font-size: 1.7rem;
     }
   }
-  &__name{
-    margin-top: 50px;
-    font-size: 4.2rem;
+  
+  &__explanation{
+    margin-top: 20px;
+    font-size: 2.7rem;
     font-weight: bold;
+    text-align: left;
+    margin-left: 317px;
     @include mq(m) {
-      font-size: 3.5rem;
+      font-size: 2.5rem;
+      margin-left: 190px;
     }
     @include mq(s) {
-      font-size: 3.3rem;
+      font-size: 2rem;
+      margin-left: 0px;
+    }
+  }
+}
+
+//シューズ一覧画面
+.shoes-search{
+  &__group {
+    margin-top: 20px;
+  }
+  &__title {
+    font-size: 1.8rem;
+  }
+  &__select {
+    width: 90%;
+    padding: 5px 5px;
+    font-size: 1.8rem;
+    border-radius: 3px;
+    border: 2px solid #ddd;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    @include mq(s) {
+      width: 100%;
+    }
+    &:focus{
+      border: 2px solid blue;
+      z-index: 10;
+      outline: 0;
+    }
+  }
+  &__btn {
+    text-align: center;
+    color: cl(white);
+    background:  blue;
+    width: 120px;
+    padding: 8px 0 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    font-size: 1.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    &:hover {
+      opacity: 0.7;
+      transition: 0.3s;
+    }
+    @include mq(s) {
+      font-size: 1.8rem;
     }
   }
 }

@@ -4,6 +4,10 @@ class CreateShoes < ActiveRecord::Migration[6.1]
       t.string :name, null: false
       t.text :url
       t.text :img_url
+      t.integer :gender
+      t.integer :purpose
+      t.integer :maker
+      t.integer :level
 
       t.timestamps
     end

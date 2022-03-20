@@ -1,6 +1,6 @@
 class MypagesController < ApplicationController
   before_action :set_user, only: %i[edit update]
-  
+
   def edit; end
 
   def update

@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 2022_03_09_110436) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["shoe_id"], name: "index_comments_on_shoe_id"
+    t.index ["user_id", "shoe_id"], name: "index_comments_on_user_id_and_shoe_id", unique: true
     t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
@@ -36,6 +37,10 @@ ActiveRecord::Schema.define(version: 2022_03_09_110436) do
     t.string "name", null: false
     t.text "url"
     t.text "img_url"
+    t.integer "gender"
+    t.integer "purpose"
+    t.integer "maker"
+    t.integer "level"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["name"], name: "index_shoes_on_name", unique: true

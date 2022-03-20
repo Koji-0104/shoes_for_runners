@@ -1,6 +1,7 @@
 class ShoesController < ApplicationController
   def index
-    @shoes = Shoe.all
+    @q = Shoe.ransack(params[:q])
+    @shoes = @q.result(distinct: true).all
   end
 
   def show
