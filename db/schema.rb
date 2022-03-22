@@ -37,10 +37,10 @@ ActiveRecord::Schema.define(version: 2022_03_09_110436) do
     t.string "name", null: false
     t.text "url"
     t.text "img_url"
-    t.integer "gender"
-    t.integer "purpose"
-    t.integer "maker"
-    t.integer "level"
+    t.integer "gender", null: false, unsigned: true
+    t.integer "purpose", null: false, unsigned: true
+    t.integer "maker", null: false, unsigned: true
+    t.integer "level", null: false, unsigned: true
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["name"], name: "index_shoes_on_name", unique: true
