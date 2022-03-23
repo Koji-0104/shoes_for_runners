@@ -1,15 +1,19 @@
 <!-- シューズ一覧 -->
 <div class="shoes-list">
   <div class="shoes-list__inner">
+    <h2 class="shoes-list__title"><%= t '.title' %></h2>
+    <p class="shoes-list__explanation">下の4つの項目にご回答していただくと、おすすめシューズが表示されます。</p>
     <div>
-      <h2 class="shoes-list__title"><%= t '.title' %></h2>
+      <%= render 'search_form', url: shoes_path %>
     </div>
-    <div class="shoes-list__item">
-      <% if @shoes.present? %>
-        <%= render @shoes %>
-      <% else %>
-        <p><%= t('.no_result') %></p>
-      <% end %>
+    <div class="shoes-list__items-inner">
+      <div class="shoes-list__item">
+        <% if @shoes.present? %>
+          <%= render @shoes %>
+        <% else %>
+          <p><%= t('.no_result') %></p>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>

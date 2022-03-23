@@ -4,10 +4,12 @@ ja:
     register: '登録'
     logout: 'ログアウト'
     post: '投稿'
+    search_word: '検索ワード'
     show: '詳細'
     edit: '編集'
     update: '更新する'
     delete: '削除'
+    search: '検索'
     password_reset: 'パスワードリセット'
     unspecified: '指定なし'
     message:
@@ -45,8 +47,8 @@ ja:
       success: 'ログアウトしました'
   shoes:
     index:
-      title: 'シューズ一覧'
-      no_result: 'シューズがありません。'
+      title: 'シューズ検索'
+      no_result: '検索結果がありません。'
     show:
       title: 'シューズ詳細'
     bookmarks:
