@@ -1,0 +1,14 @@
+<div class="password-reset">
+  <div class="password-reset__inner">
+    <h1 class="password-reset__title"><%= t('.title') %></h1>
+    <%= form_with url: password_resets_path, local: true do |f| %>
+    <div class="password-reset__form">
+      <div class="password-reset__form-item">
+        <%= f.label :email, t(User.human_attribute_name(:email)), class: 'password-reset__form-title' %>
+        <%= f.email_field :email, class: 'form-control', class: 'password-reset__text-box' %>
+      </div>
+    </div>
+    <%= f.submit t('password_resets.new.submit'), class: 'password-reset__btn' %>
+    <% end %>
+  </div>
+</div>
