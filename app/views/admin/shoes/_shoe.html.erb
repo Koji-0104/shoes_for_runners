@@ -1,0 +1,28 @@
+<tr>
+  <td>
+    <%= shoe.id %>
+  </td>
+  <td>
+    <%= shoe.name %>
+  </td>
+  <td>
+    <%= shoe.gender_i18n %>
+  </td>
+  <td>
+    <%= shoe.purpose_i18n %>
+  </td>
+  <td>
+    <%= shoe.maker_i18n %>
+  </td>
+  <td>
+    <%= shoe.level_i18n %>
+  </td>
+  <td>
+    <%= l shoe.created_at, format: :long %>
+  </td>
+  <td>
+    <%= link_to t('defaults.show'), admin_shoe_path(shoe), class: 'btn btn-info' %>
+    <%= link_to t('defaults.edit'), edit_admin_shoe_path(shoe), class: 'btn btn-success' %>
+    <%= link_to t('defaults.delete'), admin_shoe_path(shoe), method: :delete, data: { confirm: t('defaults.message.delete_confirm') }, class: 'btn btn-danger' %>
+  </td>
+</tr>

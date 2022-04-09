@@ -1,0 +1,41 @@
+<% content_for(:title, t('.title')) %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 mt-3 mb-3">
+      <h1><%= t '.title' %></h1>
+      <%= form_with model: @shoe, url: admin_shoes_path, local: true do |f| %>
+        <div class="form-group">
+          <%= f.label :name, class:"float-left" %>
+          <%= f.text_field :name, class: "form-control" %>
+        </div>
+        <div class="form-group">
+          <%= f.label :url, class:"float-left" %>
+          <%= f.text_field :url, class: "form-control" %>
+        </div>
+        <div class="form-group">
+          <%= f.label :img_url, class:"float-left" %><br>
+          <%= f.text_field :img_url, class:"form-control" %>
+        </div>
+        <div class="form-group">
+          <%= f.label :gender, 'メンズ or レディース シューズ選択'%> <br>
+          <%= f.select :gender, Shoe.genders_i18n.invert, { include_blank: '選択してください'}, { class: 'form-control' , required: true } %>
+        </div>
+        <div class="form-group">
+          <%= f.label :purpose,  'ジョギング用 or レース用シューズ選択', class:'float-left' %> <br>
+          <%= f.select :purpose, Shoe.purposes_i18n.invert, { include_blank: '選択してください'}, { class: 'form-control' , required: true } %>
+        </div>
+        <div class="form-group">
+          <%= f.label :maker,  'メーカー選択', class:'float-left' %>
+          <%= f.select :maker, Shoe.makers_i18n.invert, { include_blank: '選択してください'}, { class: 'form-control' , required: true } %>
+        </div>
+        <div class="form-group">
+          <%= f.label :level,  '走力レベル選択', class:'float-left' %> <br>
+          <%= f.select :level, Shoe.levels_i18n.invert, { include_blank: '選択してください'}, { class: 'form-control' , required: true } %>
+        </div>
+        <div class="actions">
+          <%= f.submit '送信', class: "btn btn-primary" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

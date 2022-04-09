@@ -5,6 +5,8 @@ ja:
     logout: 'ログアウト'
     post: '投稿'
     search_word: '検索ワード'
+    search_shoes: 'シューズ名 検索'
+    search_user: 'ユーザー名 検索'
     show: '詳細'
     edit: '編集'
     password_reset: 'パスワードリセット'
@@ -16,6 +18,8 @@ ja:
     message:
       require_login: 'ログインしてください'
       created: "%{item}を作成しました"
+      added: "%{item}を追加しました"
+      not_added: "%{item}を追加できませんでした"
       not_created: "%{item}を作成できませんでした"
       not_created_comment: "%{item}投稿は1つのシューズにつき1回まで可能です"
       updated_user: "%{item}アカウントを更新しました"
@@ -76,3 +80,31 @@ ja:
     update:
       success: 'パスワードを変更しました'
       fail: 'パスワードの変更に失敗しました'
+  admin:
+    user_sessions:
+      new:
+        title: 'ログイン'
+      create:
+        success: 'ログインしました'
+        fail: 'ログインに失敗しました'
+      destroy:
+        success: 'ログアウトしました'
+    dashboards:
+      index:
+        title: 'ダッシュボード'
+    users:
+      index:
+        title: 'ユーザー一覧'
+      edit:
+        title: 'ユーザー編集'
+      show:
+        title: 'ユーザー詳細'
+    shoes:
+      new:
+        title: 'シューズ追加'
+      index:
+        title: 'シューズ一覧'
+      edit:
+        title: 'シューズ編集'
+      show:
+        title: 'シューズ詳細'

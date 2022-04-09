@@ -12,10 +12,10 @@
     max-width: 1020px;
     margin-left: auto;
     margin-right: auto;
-    padding: 100px 40px 50px;
+    padding: 50px 20px 50px;
     @include mq(m) {
     width: 750px;
-    padding: 85px 20px 30px;
+    padding: 50px 20px 70px;
   }
   @include mq(s) {
     width: 360px;

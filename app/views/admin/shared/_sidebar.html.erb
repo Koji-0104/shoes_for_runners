@@ -1,0 +1,59 @@
+<!-- Main Sidebar Container -->
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+  <!-- Brand Logo -->
+  <%= link_to admin_root_path, class: "brand-link" do %>
+    <%= image_tag "shoes-icon.svg", :alt => 'シューズの画像', size: '30x30', class: 'mx-2' %>
+    <span class="brand-text font-weight-light">Shoes for runners</span>
+  <% end %>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <!-- Sidebar user panel (optional) -->
+    <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+      <%= image_tag "login-user.svg", :alt => 'ログインしているユーザーの画像', size: '20x30', class: 'ml-2' %>
+      <div class="info d-block text-white ">
+        <%= current_user.decorate.name %></a>
+      </div>
+    </div>
+
+    <!-- Sidebar Menu -->
+    <nav class="mt-2">
+      <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+        <li class="nav-item">
+          <%= link_to admin_root_path, class: "nav-link" do %>
+            <%= image_tag "dashboard.svg", :alt => 'ダッシュボードの画像', size: '25x25', class: 'mb-1' %>
+            <p>
+              <%= t('admin.dashboards.index.title') %>
+            </p>
+          <% end %>
+        </li>
+        <li class="nav-item">
+          <%= link_to new_admin_shoe_path, class: "nav-link" do %>
+            <%= image_tag "plus.svg", :alt => '＋の画像', size: '25x25', class: 'mb-1' %>
+            <p>
+              <%= t('admin.shoes.new.title') %>
+            </p>
+          <% end %>
+        </li>
+        <li class="nav-item">
+          <%= link_to admin_shoes_path, class: "nav-link" do %>
+            <%= image_tag "list.svg", :alt => 'シューズ一覧の画像', size: '25x25', class: 'mb-1' %>
+            <p>
+              <%= t('admin.shoes.index.title') %>
+            </p>
+          <% end %>
+        </li>
+        <li class="nav-item">
+          <%= link_to admin_users_path, class: "nav-link" do %>
+            <%= image_tag "user.svg", :alt => 'ユーザーの画像', size: '25x25', class: 'mb-1' %>
+            <p>
+              <%= t('admin.users.index.title') %>
+            </p>
+          <% end %>
+        </li>
+      </ul>
+    </nav>
+    <!-- /.sidebar-menu -->
+  </div>
+  <!-- /.sidebar -->
+</aside>
