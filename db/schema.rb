@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_03_23_132402) do
+ActiveRecord::Schema.define(version: 2022_03_30_111351) do
 
   create_table "bookmarks", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.bigint "user_id", null: false
@@ -41,9 +41,11 @@ ActiveRecord::Schema.define(version: 2022_03_23_132402) do
     t.integer "purpose", null: false, unsigned: true
     t.integer "maker", null: false, unsigned: true
     t.integer "level", null: false, unsigned: true
+    t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["name"], name: "index_shoes_on_name", unique: true
+    t.index ["user_id"], name: "index_shoes_on_user_id"
   end
 
   create_table "users", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
@@ -57,6 +59,7 @@ ActiveRecord::Schema.define(version: 2022_03_23_132402) do
     t.datetime "reset_password_token_expires_at"
     t.datetime "reset_password_email_sent_at"
     t.integer "access_count_to_reset_password_page", default: 0
+    t.integer "role", default: 0, null: false
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
@@ -65,4 +68,5 @@ ActiveRecord::Schema.define(version: 2022_03_23_132402) do
   add_foreign_key "bookmarks", "users"
   add_foreign_key "comments", "shoes"
   add_foreign_key "comments", "users"
+  add_foreign_key "shoes", "users"
 end

@@ -1,3 +1,4 @@
+<% content_for(:title, @shoe.name) %>
 <div class="shoes-detail">
   <div id="shoe-id-<%= @shoe.id %>">
     <div class="shoes-detail__inner">
@@ -16,10 +17,10 @@
       </div>
       <div class="shoes-detail__text">
         <h2 class="shoes-detail__explanation">シューズ名：<%= @shoe.name %></h2>
-        <h2 class="shoes-detail__explanation">性別：<%= @shoe.gender %></h2>
-        <h2 class="shoes-detail__explanation">メーカー：<%= @shoe.maker %></h2>
-        <h2 class="shoes-detail__explanation">使用目的：<%= @shoe.purpose %></h2>
-        <h2 class="shoes-detail__explanation">レベル：<%= @shoe.level %></h2>
+        <h2 class="shoes-detail__explanation">メンズ or レディース：<%= @shoe.gender_i18n %></h2>
+        <h2 class="shoes-detail__explanation">メーカー：<%= @shoe.maker_i18n %></h2>
+        <h2 class="shoes-detail__explanation">使用目的：<%= @shoe.purpose_i18n %></h2>
+        <h2 class="shoes-detail__explanation">レベル：<%= @shoe.level_i18n %></h2>
       </div>
     </div>
   </div>

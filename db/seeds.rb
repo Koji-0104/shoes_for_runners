@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-20.times do |n|
+30.times do |n|
   Shoe.create!(
     name: "テストシューズ#{n + 1}",
     url: "https://hb.afl.rakuten.co.jp/ichiba/247897ef.7a7fceb1.247897f0.a861c831/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsportsauthority%2F65903254%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjMwMHgzMDAiLCJuYW0iOjEsIm5hbXAiOiJkb3duIiwiY29tIjoxLCJjb21wIjoiZG93biIsInByaWNlIjowLCJib3IiOjEsImNvbCI6MCwiYmJ0biI6MCwicHJvZCI6MCwiYW1wIjpmYWxzZX0%3D",
@@ -16,10 +16,11 @@
     purpose: 0,
     maker: 0,
     level: 0,
+    user_id: 1
   )
 end
 
-3.times do |n|
+30.times do |n|
   User.create!(
     email: "test#{n + 1}@test.com",
     name: "テストさん#{n + 1}",

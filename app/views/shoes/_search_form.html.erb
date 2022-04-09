@@ -2,21 +2,22 @@
   <div class="shoes-search">
     <div class="shoes-search__inner">
       <div class="shoes-search__group">
-          <%= f.label :gender_cont, '男性用 or 女性用シューズ選択', class:'shoes-search__title' %>
-          <%= f.select :gender_cont, Shoe.genders{|key, value| [key, Shoe.genders[value]]}, { include_blank: '選択してください'}, { class: 'shoes-search__select' , required: true } %>
+          <%= f.label :gender_cont, 'メンズ or レディース シューズ選択', class:'shoes-search__title' %>
+          <%= f.select :gender_cont, Shoe.genders_i18n.invert.map{|key, value| [key, Shoe.genders[value]]}, { include_blank: '選択してください'}, { class: 'shoes-search__select' , required: true } %>
       </div>
       <div class="shoes-search__group">
           <%= f.label :purpose_cont,  'ジョギング用 or レース用シューズ選択', class:'shoes-search__title' %>
-          <%= f.select :purpose_cont, Shoe.purposes{|key, value| [key, Shoe.purposes[value]]}, { include_blank: '選択してください'}, { class: 'shoes-search__select' , required: true } %>
+          <%= f.select :purpose_cont, Shoe.purposes_i18n.invert.map{|key, value| [key, Shoe.purposes[value]]}, { include_blank: '選択してください'}, { class: 'shoes-search__select' , required: true } %>
       </div>
       </div>
       <div class="shoes-search__group">
           <%= f.label :maker_cont,  'メーカー選択', class:'shoes-search__title' %>
-          <%= f.select :maker_cont, Shoe.makers{|key, value| [key, Shoe.makers[value]]}, { include_blank: '選択してください'}, { class: 'shoes-search__select' , required: true } %>
+          <%= f.select :maker_cont, Shoe.makers_i18n.invert.map{|key, value| [key, Shoe.makers[value]]}, { include_blank: '選択してください'}, { class: 'shoes-search__select' , required: true } %>
       </div>
-      <div class="shoes-search__group">
+      <div class="s
+      hoes-search__group">
           <%= f.label :level_cont,  '走力レベル選択', class:'shoes-search__title' %>
-          <%= f.select :level_cont, Shoe.levels{|key, value| [key, Shoe.levels[value]]}, { include_blank: '選択してください'}, { class: 'shoes-search__select' , required: true } %>
+          <%= f.select :level_cont, Shoe.levels_i18n.invert.map{|key, value| [key, Shoe.levels[value]]}, { include_blank: '選択してください'}, { class: 'shoes-search__select' , required: true } %>
       </div>
     </div>
     <%= f.submit (t 'defaults.search'), class: 'shoes-search__btn'%>

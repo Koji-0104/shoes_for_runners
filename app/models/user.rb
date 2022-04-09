@@ -3,6 +3,7 @@ class User < ApplicationRecord
 
   has_many :comments, dependent: :destroy
   has_many :bookmarks, dependent: :destroy
+  has_many :shoes, dependent: :destroy
   has_many :bookmark_shoes, through: :bookmarks, source: :shoe
   has_many :comment_shoes, through: :comments, source: :shoe
 
@@ -12,6 +13,8 @@ class User < ApplicationRecord
   validates :reset_password_token, uniqueness: true, allow_nil: true
   validates :name, presence: true, length: { maximum: 10 }
   validates :email, uniqueness: true, presence: true
+
+  enum role: { general: 0, admin: 1 }
 
   def own?(object)
     id == object.user_id

@@ -8,6 +8,7 @@ class CreateShoes < ActiveRecord::Migration[6.1]
       t.integer :purpose, unsigned: true, null: false
       t.integer :maker, unsigned: true, null: false
       t.integer :level, unsigned: true, null: false
+      t.references :user, foreign_key: true
 
       t.timestamps
     end

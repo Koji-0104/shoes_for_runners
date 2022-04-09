@@ -7,8 +7,8 @@ class Shoe < ApplicationRecord
   validates :url, presence: true
   validates :img_url, presence: true
 
-  enum gender: { 男性用シューズ: 0, 女性用シューズ: 1 }
-  enum purpose: { ジョギング用: 0, レース用: 1 }
-  enum maker: { ナイキ: 0, アディダス: 1, ミズノ: 2, アシックス: 3 }
-  enum level: {初級者（マラソン5時間以上）: 0, 中級者（マラソン5時間以内）: 1, 上級者（マラソン4時間以内）:2 }
+  enum gender: { man: 0, woman: 1 }
+  enum purpose: { jogging: 0, racing: 1 }
+  enum maker: { nike: 0, adidas: 1, mizuno: 2, asics: 3 }
+  enum level: {beginner: 0, intermediate: 1, advanced: 2 }
 end
