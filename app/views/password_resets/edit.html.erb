@@ -1,0 +1,24 @@
+<div class="password-reset-edit">
+  <div class="password-reset-edit__inner">
+    <h1 class="password-reset-edit__title"><%= t('.title') %></h1>
+    <%= form_with model: @user, url: password_reset_path(@token), local: true do |f| %>
+    <%= render 'shared/error_messages', object: f.object %>
+    <div class="password-reset-edit__form">
+      <div class="password-reset-edit__form-item">
+        <%= f.label :email, class: 'password-reset-edit__form-title' %>
+        <div class="password-reset-edit__form-email">
+          <%= @user.email %>
+        </div>
+      </div>
+      <div class="password-reset-edit__form-item">
+        <%= f.label :password, class: 'password-reset-edit__form-title' %>
+        <%= f.password_field :password, class: 'password-reset-edit__text-box' %>
+      </div>
+      <div class="password-reset-edit__form-item">
+        <%= f.label :password_confirmation, class: 'password-reset-edit__form-title' %>
+        <%= f.password_field :password_confirmation, class: 'password-reset-edit__text-box' %>
+      </div>
+      <%= f.submit class: 'password-reset-edit__btn' %>
+    <% end %>
+  </div>
+</div>
