@@ -1,0 +1,22 @@
+<footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__title-link">
+              <%= link_to 'Shoes for runners', root_path, class: "footer-logo text-decoration-none" %>
+            </div>
+            <div class="footer__link">
+                <div class="footer__privacy">
+                  <%= link_to t('home.privacy.link-name'), privacy_path, class: "footer-text text-decoration-none" %>
+                </div>
+                <div class="footer__privacy">
+                  <%= link_to t('home.terms.title'), terms_path, class: "footer-text text-decoration-none" %>
+                </div>
+                <div class="footer__inquiry">
+                  <%= link_to t('home.contact.title'), "#", class: "footer-text text-decoration-none" %>
+                </div>
+
+            </div>
+            <div class="footer__cr">
+                <small>&copy;Shoes for runners , All Rights Reserved.</small>
+            </div>
+        </div>
+    </footer>
