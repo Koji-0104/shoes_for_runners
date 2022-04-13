@@ -30,6 +30,12 @@ ja:
       delete_confirm: '削除しますか？'
       update_confirm: '更新しますか？'
       not_authorized: '権限がありません'
+  home:
+    privacy:
+      title: 'プライバシーポリシー'
+      link-name: 'プライバシー'
+    terms:
+      title: '利用規約'
   users:
     new:
       title: 'ユーザー登録'
@@ -50,6 +56,13 @@ ja:
       fail: 'ログインに失敗しました'
     destroy:
       success: 'ログアウトしました'
+  contacts:
+    new:
+      title: 'お問い合わせ'
+      submit: '送信'
+    create:
+      success: 'お問い合わせが完了しました。'
+      fail: 'お問い合わせに失敗しました'
   shoes:
     index:
       title: 'シューズ検索'

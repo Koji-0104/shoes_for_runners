@@ -1,0 +1,50 @@
+@import "base/base";
+@import "base/reset";
+@import "mixin/color";
+@import "mixin/font";
+@import "mixin/media";
+
+.footer {
+  &__inner {
+    text-align: center;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.16);
+    height: 270px;
+    padding: 50px 20px;
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    @include mq(s) {
+      height: 360px;
+    }
+  }
+  &__title-link {
+    font-size: 2.8rem;
+    font-weight: bold;
+  }
+  &__link {
+    display: flex;
+    font-weight: bold;
+    font-size: 1.9rem;
+    justify-content: center;
+    margin: 30px 0;
+    @include mq(s) {
+      text-align: center;
+      display: block;
+    }
+  }
+  &__privacy {
+    margin-right: 200px;
+    @include mq(m) {
+      margin-right: 150px;
+    }
+    @include mq(s) {
+      margin-right: 0px;
+      margin-bottom: 20px;
+    }
+  }
+  &__cr {
+    font-size: 2.2rem;
+    font-weight: bold;
+  }
+}

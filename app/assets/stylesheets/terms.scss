@@ -1,0 +1,271 @@
+@import "base/base";
+@import "base/reset";
+@import "mixin/color";
+@import "mixin/font";
+@import "mixin/media";
+
+.terms {
+  &__inner {
+    display: block;
+    width: 100%;
+    max-width: 1060px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 130px 70px 140px;
+    @include mq(m) {
+      width: 90%;
+      padding: 85px 23px 120px;
+    }
+    @include mq(s) {
+      width: 97%;
+      padding: 70px 23px 110px;
+    }
+  }
+  &__title {
+    font-size: 4.3rem;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 100px;
+    @include mq(m) {
+      font-size: 3.5rem;
+    }
+    @include mq(s) {
+      font-size: 3rem;
+      margin-bottom: 70px;
+    }
+  }
+  &__text1 {
+    margin-bottom: 23px;
+    font-size: 1.8rem;
+  }
+  &__text2 {
+    margin-bottom: 50px;
+    font-size: 1.8rem;
+  }
+
+  &__application-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 23px;
+    @include mq(m) {
+      font-size: 2.3rem;
+    }
+    @include mq(s) {
+      font-size: 2rem;
+    }
+  }
+  &__application-text {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    @include mq(s) {
+      margin-bottom: 30px;
+    }
+  }
+
+
+
+  &__register-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 23px;
+    @include mq(m) {
+      font-size: 2.3rem;
+    }
+    @include mq(s) {
+      font-size: 2rem;
+    }
+  }
+  &__register-text1 {
+    font-size: 1.8rem;
+    margin-bottom: 23px;
+    @include mq(s) {
+      margin-bottom: 23px;
+    }
+  }
+  &__register-text2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    @include mq(s) {
+      margin-bottom: 23px;
+    }
+  }
+  &__register-detail {
+    margin-bottom: 40px;
+  }
+  &__register-detail-text {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    margin-left: 23px;
+    list-style-type: decimal;
+  }
+
+
+  &__management-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 23px;
+    @include mq(m) {
+      font-size: 2.3rem;
+    }
+    @include mq(s) {
+      font-size: 2rem;
+    }
+  }
+
+  &__management-detail {
+    margin-bottom: 40px;
+  }
+  &__management-detail-text {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    margin-left: 23px;
+    list-style-type: decimal;
+  }
+
+
+
+
+  &__prohibition-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 23px;
+    @include mq(m) {
+      font-size: 2.3rem;
+    }
+    @include mq(s) {
+      font-size: 2rem;
+    }
+  }
+  &__prohibition-text {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+  &__prohibition-detail {
+    margin-bottom: 40px;
+  }
+  &__prohibition-detail-text {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    margin-left: 23px;
+    list-style-type: decimal;
+  }
+
+  &__stoppage-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    @include mq(m) {
+      font-size: 2.3rem;
+    }
+    @include mq(s) {
+      font-size: 2rem;
+    }
+  }
+  &__stoppage-text {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+  &__stoppage-detail {
+    margin-bottom: 40px;
+  }
+  &__stoppage-detail-text {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    list-style-type: decimal;
+  }
+
+
+  &__restriction-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    @include mq(m) {
+      font-size: 2.3rem;
+    }
+    @include mq(s) {
+      font-size: 2rem;
+    }
+  }
+  &__restriction-text {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+  &__restriction-detail {
+    margin-bottom: 40px;
+  }
+  &__restriction-detail-text {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    list-style-type: decimal;
+  }
+
+
+
+  &__disclaimer-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 23px;
+    @include mq(m) {
+      font-size: 2.3rem;
+    }
+    @include mq(s) {
+      font-size: 2rem;
+    }
+  }
+  &__disclaimer-text {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+  }
+  &__withdrawal-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 23px;
+    @include mq(m) {
+      font-size: 2.3rem;
+    }
+    @include mq(s) {
+      font-size: 2rem;
+    }
+  }
+  &__withdrawal-text {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+  }
+
+  &__service-change-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 23px;
+    @include mq(m) {
+      font-size: 2.3rem;
+    }
+    @include mq(s) {
+      font-size: 2rem;
+    }
+  }
+  &__service-change-text {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+  }
+
+  &__terms-change-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 23px;
+    @include mq(m) {
+      font-size: 2.3rem;
+    }
+    @include mq(s) {
+      font-size: 2rem;
+    }
+  }
+  &__terms-change-text {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+  }
+  &__date {
+    font-size: 1.8rem;
+  }
+}
