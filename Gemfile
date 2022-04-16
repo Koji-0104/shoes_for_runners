@@ -14,6 +14,7 @@ gem 'ransack'
 gem 'config', '4.0.0'
 gem 'enum_help'
 gem 'kaminari'
+gem "dotenv-rails"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.4', '>= 6.1.4.4'

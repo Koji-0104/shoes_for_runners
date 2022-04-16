@@ -11,6 +11,10 @@ ja:
         password_confirmation: 'パスワード確認'
         name: '名前'
         role: '権限'
+      contact:
+        name: 'ユーザー名'
+        email: 'メールアドレス'
+        message: 'お問い合わせ内容'
       comment:
         body: 'コメント'
       shoe:
@@ -24,7 +28,6 @@ ja:
     id: 'ID'
     created_at: '作成日時'
     updated_at: '更新日時'
-
   enums:
     user:
       role:
