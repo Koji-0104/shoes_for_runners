@@ -1,0 +1,26 @@
+<% content_for(:title, t('.title')) %>
+<div class="contact">
+  <div class="contact__inner">
+    <h2 class="contact__title"><%= t '.title' %></h2>
+      <%= form_with model: @contact, local: true do |f| %>
+        <%= render 'shared/error_messages', object: f.object %>
+        <div class="contact__form">
+          <ul class="contact__form-list">
+            <li class="contact__form-item">
+              <%= f.label :name, class: 'contact__form-title' %>
+              <%= f.text_field :name, class: 'contact__text-box' %>
+            </li>
+            <li class="contact__form-item">
+              <%= f.label :email, class: 'contact__form-title' %>
+              <%= f.email_field :email, class: 'contact__text-box' %>
+            </li>
+            <li class="contact__form-item">
+              <%= f.label :message, class: 'contact__form-title' %>
+              <%= f.text_area :message, class: 'contact__text-area', placeholder: Contact.human_attribute_name(:message) %>
+            </li>
+          </ul>
+          <%= f.submit t('contacts.new.submit'),  class: 'contact__btn' %>
+        </div>
+      <% end %>
+  </div>
+</div>

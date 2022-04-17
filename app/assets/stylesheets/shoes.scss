@@ -12,14 +12,14 @@
     max-width: 1020px;
     margin-left: auto;
     margin-right: auto;
-    padding: 50px 20px 50px;
+    padding: 100px 20px 150px;
     @include mq(m) {
     width: 750px;
-    padding: 50px 20px 70px;
+    padding: 100px 20px 150px;
   }
   @include mq(s) {
     width: 360px;
-    padding: 70px 20px 70px;
+    padding: 100px 20px 150px;
   }
   }
   &__title {
@@ -37,14 +37,14 @@
     max-width: 1020px;
     margin-left: auto;
     margin-right: auto;
-    padding: 50px 20px 50px;
+    padding: 0px 20px 165px;
     @include mq(m) {
     width: 750px;
-    padding: 50px 20px 70px;
+    padding: 0px 20px 165px;
   }
   @include mq(s) {
     width: 360px;
-    padding: 70px 20px 70px;
+    padding: 0px 20px 165px;
   }
   }
   &__item{

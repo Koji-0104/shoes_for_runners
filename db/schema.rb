@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_03_30_111351) do
+ActiveRecord::Schema.define(version: 2022_04_10_110637) do
 
   create_table "bookmarks", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.bigint "user_id", null: false
@@ -31,6 +31,14 @@ ActiveRecord::Schema.define(version: 2022_03_30_111351) do
     t.index ["shoe_id"], name: "index_comments_on_shoe_id"
     t.index ["user_id", "shoe_id"], name: "index_comments_on_user_id_and_shoe_id", unique: true
     t.index ["user_id"], name: "index_comments_on_user_id"
+  end
+
+  create_table "contacts", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.string "name"
+    t.string "email"
+    t.text "message", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "shoes", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|

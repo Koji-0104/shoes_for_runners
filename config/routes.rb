@@ -22,6 +22,7 @@ Rails.application.routes.draw do
   resources :bookmarks, only: %i[create destroy]
   resource :mypage, only: %i[show edit update]
   resources :password_resets, only: %i[new create edit update]
+  resources :contacts, only: [:new, :create]
 
   namespace :admin do
     root to: 'dashboards#index'
