@@ -14,8 +14,7 @@
           <%= f.label :maker_cont,  'メーカー選択', class:'shoes-search__title' %>
           <%= f.select :maker_cont, Shoe.makers_i18n.invert.map{|key, value| [key, Shoe.makers[value]]}, { include_blank: '選択してください'}, { class: 'shoes-search__select' , required: true } %>
       </div>
-      <div class="s
-      hoes-search__group">
+      <div class="shoes-search__group">
           <%= f.label :level_cont,  '走力レベル選択', class:'shoes-search__title' %>
           <%= f.select :level_cont, Shoe.levels_i18n.invert.map{|key, value| [key, Shoe.levels[value]]}, { include_blank: '選択してください'}, { class: 'shoes-search__select' , required: true } %>
       </div>

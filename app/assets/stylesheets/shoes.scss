@@ -12,14 +12,14 @@
     max-width: 1020px;
     margin-left: auto;
     margin-right: auto;
-    padding: 100px 20px 150px;
+    padding: 100px 20px 130px;
     @include mq(m) {
     width: 750px;
-    padding: 100px 20px 150px;
+    padding: 100px 20px 90px;
   }
   @include mq(s) {
     width: 360px;
-    padding: 100px 20px 150px;
+    padding: 100px 20px 90px;
   }
   }
   &__title {
@@ -39,7 +39,7 @@
     margin-right: auto;
     padding: 0px 20px 165px;
     @include mq(m) {
-    width: 750px;
+    width: 755px;
     padding: 0px 20px 165px;
   }
   @include mq(s) {
@@ -135,7 +135,7 @@
     text-align: center;
     font-size: 5rem;
     font-weight: bold;
-    margin-bottom: 105px;
+    margin-bottom: 50px;
     @include mq(m) {
       font-size: 4rem;
     }
@@ -170,10 +170,10 @@
     font-size: 2.7rem;
     font-weight: bold;
     text-align: left;
-    margin-left: 317px;
+    margin-left: 265px;
     @include mq(m) {
       font-size: 2.5rem;
-      margin-left: 190px;
+      margin-left: 145px;
     }
     @include mq(s) {
       font-size: 2rem;
