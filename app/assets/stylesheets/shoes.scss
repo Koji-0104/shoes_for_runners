@@ -12,21 +12,24 @@
     max-width: 1020px;
     margin-left: auto;
     margin-right: auto;
-    padding: 100px 20px 130px;
+    padding: 60px 20px 60px;
     @include mq(m) {
     width: 750px;
-    padding: 100px 20px 90px;
+    padding: 60px 20px 60px;
   }
   @include mq(s) {
     width: 360px;
-    padding: 100px 20px 90px;
+    padding: 60px 20px 60px;
   }
   }
   &__title {
     text-align: center;
     font-size: 3.2rem;
     font-weight: bold;
-    margin-bottom: 70px;
+    margin-bottom: 60px;
+    @include mq(s) {
+      margin-bottom: 50px;
+    }
   }
   &__explanation{
     font-size: 1.8rem;
