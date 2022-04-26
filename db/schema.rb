@@ -29,7 +29,6 @@ ActiveRecord::Schema.define(version: 2022_04_10_110637) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["shoe_id"], name: "index_comments_on_shoe_id"
-    t.index ["user_id", "shoe_id"], name: "index_comments_on_user_id_and_shoe_id", unique: true
     t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
