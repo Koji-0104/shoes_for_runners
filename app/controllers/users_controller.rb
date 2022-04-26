@@ -14,7 +14,7 @@ class UsersController < ApplicationController
   end
 
   def comments
-    @user_shoes = current_user.comment_shoes.includes(:user).order(created_at: :asc)
+    @user_shoes = current_user.comment_shoes.distinct.includes(:user).order(created_at: :asc)
   end
 
   private
