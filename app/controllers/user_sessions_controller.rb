@@ -15,4 +15,15 @@ class UserSessionsController < ApplicationController
     logout
     redirect_to root_path, success: t('.success')
   end
+
+  def guest_login
+    @guest_user = User.create(
+    name: 'ゲスト',
+    email: SecureRandom.alphanumeric(10) + "@email.com",
+    password: 'password',
+    password_confirmation: 'password'
+    )
+    auto_login(@guest_user)
+    redirect_to root_path, success: t('.success')
+  end
 end

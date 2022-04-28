@@ -14,7 +14,8 @@
     <div class="header__bglayer"></div>
     <nav class="header__nav">
       <ul class="header__list">
-        <li><%= link_to t('shoes.index.title'), shoes_path, class: "header__item" %></li>
+        <li><%= link_to (t 'shoes.index.title'), shoes_path, class: "header__item" %></li>
+        <li><%= link_to (t 'defaults.guest_login'), guest_login_path, method: :post, class: "header__item" %></li>
         <li><%= link_to (t 'defaults.login'), login_path, class: "header__item" %></li>
       </ul>
     </nav>

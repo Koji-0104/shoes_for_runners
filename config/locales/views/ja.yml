@@ -1,6 +1,7 @@
 ja:
   defaults:
     login: 'ログイン'
+    guest_login: 'ゲストログイン'
     register: '登録'
     logout: 'ログアウト'
     post: '投稿'
@@ -56,6 +57,8 @@ ja:
       fail: 'ログインに失敗しました'
     destroy:
       success: 'ログアウトしました'
+    guest_login:
+      success: 'ゲストとしてログインしました'
   contacts:
     new:
       title: 'お問い合わせ'
