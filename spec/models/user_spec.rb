@@ -13,10 +13,10 @@ RSpec.describe 'User', type: :model do
     expect(user.errors[:name]).to include("を入力してください")
   end
 
-  it "ユーザー名が11文字以上、無効" do
-    user = build(:user, name: "abcdefghijk")
+  it "ユーザー名が31文字以上、無効" do
+    user = build(:user, name: "abcdabcdabcdabcdabcdabcdabcdabc")
     user.valid?
-    expect(user.errors[:name]).to include("は10文字以内で入力してください")
+    expect(user.errors[:name]).to include("は30文字以内で入力してください")
   end
 
   it "メールアドレスがない場合、無効" do
