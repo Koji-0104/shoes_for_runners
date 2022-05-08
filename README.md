@@ -68,7 +68,7 @@ https://shoes-for-runners.app
 
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; お問い合わせ機能 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| [管理画面]シューズ追加 |
 | :---: | :---: |
-|![demo](https://gyazo.com/3f0a4f3bad1520677f191c147d2eeabc/raw)|![demo](https://gyazo.com/59c9359823503d7ee186459637a241bb/raw)|
+|![demo](https://gyazo.com/466435dd2c0d89261f41fe69dfae01b3/raw)|![demo](https://gyazo.com/59c9359823503d7ee186459637a241bb/raw)|
 |お問い合わせ内容を記入することでお問い合わせができる|管理者が新しいシューズを登録することができる|
 
 
