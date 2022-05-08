@@ -44,13 +44,13 @@ https://shoes-for-runners.app
 - 結合テスト(system)
 
 # 機能説明
-| トップページ | ゲストログイン |
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; トップページ | ゲストログイン |
 | :---: | :---: |
 | <img width="600" alt="トップページ" src="https://user-images.githubusercontent.com/90697671/167283481-5751456b-f739-4257-a919-cf85ad4153db.png"> | ![demo](https://gyazo.com/fafc3366481369ff8a077168bad485d0/raw) |
 | サービス説明 | ゲストログインリンクをクリックするとゲストログインできる |
 
 
-| おすすめシューズ検索 | シューズ詳細画面 |
+| おすすめシューズ検索 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; シューズ詳細画面 |
 | :---: | :---: |
 | ![demo](https://gyazo.com/7b35326b5c2f73df9f368defab228415/raw) | <img width="500" alt="スクリーンショット 2022-05-06 22 47 27" src="https://user-images.githubusercontent.com/90697671/167284877-bbb7f89e-625e-4262-8891-20645de8865a.png"> | ![demo](https://gyazo.com/795a50e91560f22bca4dc70009040d87/raw) | <img width="918" alt="マイページ画面" src="https://user-images.githubusercontent.com/90697671/167285646-f0423d2b-585a-4995-8345-401a5b74b2ea.png"> |
 | 簡単な質問に回答するとおすすめシューズが表示される | シューズの詳細説明を見ることができる。また、この画面からコメントやお気に入り登録ができる |
@@ -66,7 +66,7 @@ https://shoes-for-runners.app
 | 名前やメールアドレス、お気に入りした数やコメント数が表示される | 登録したユーザー名やメールアドレスを編集することができる |
 
 
-| お問い合わせ機能 | [管理画面]シューズ追加 |
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; お問い合わせ機能 | [管理画面]シューズ追加 |
 | :---: | :---: |
 |![demo](https://gyazo.com/3f0a4f3bad1520677f191c147d2eeabc/raw)|![demo](https://gyazo.com/59c9359823503d7ee186459637a241bb/raw)|
 |お問い合わせ内容を記入することでお問い合わせができる|管理者が新しいシューズを登録することができる|
