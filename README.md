@@ -9,13 +9,21 @@ https://shoes-for-runners.app
 ランニングシューズについて何を買えば良いかわからない人におすすめのシューズを提案するアプリです。簡単な質問に答えることで自分に合ったシューズを知ることができます。
 
 # 使用技術
+
+### バックエンド
 - Ruby 3.0.3
 - Rails 6.1.4
 - MySQL 8.0.28
-- Puma
-- Nginx
-- Sorcery
 - Rspec
+
+### フロントエンド
+- HTML
+- CSS(SCSS)
+- JavaScript(jQuery)
+- bootstrap4
+
+### インフラ
+- Nginx 1.20.0
 - AWS
   - VPC
   - EC2
