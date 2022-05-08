@@ -55,7 +55,7 @@ https://shoes-for-runners.app
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; トップページ | ゲストログイン |
 | :---: | :---: |
 | <img width="1060" alt="スクリーンショット 2022-05-08 17 58 44" src="https://user-images.githubusercontent.com/90697671/167289215-13327288-eb4c-4aa7-9eb5-fe5bf9df4b08.png"> | ![demo](https://gyazo.com/fafc3366481369ff8a077168bad485d0/raw) |
-| サービス説明 | ゲストログインリンクをクリックするとゲストログインできる |
+| サービス説明 | ゲストログインリンクを押すとゲストログインできる |
 
 
 | おすすめシューズ検索 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; シューズ詳細画面 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
@@ -71,7 +71,7 @@ https://shoes-for-runners.app
 | マイページ | アカウント編集機能 |
 | :---: | :---: |
 | <img width="918" alt="マイページ画面" src="https://user-images.githubusercontent.com/90697671/167285646-f0423d2b-585a-4995-8345-401a5b74b2ea.png"> |![demo](https://gyazo.com/96a883e129352a1f785285ba7eb8e00b/raw)|
-| 名前やメールアドレス、お気に入りした数やコメント数が表示される | 登録したユーザー名やメールアドレスを編集することができる |
+| 名前やメールアドレス、お気に入り数やコメント数が表示される | 登録したユーザー名やメールアドレスを編集することができる |
 
 
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; お問い合わせ機能 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| [管理画面]シューズ追加 |
