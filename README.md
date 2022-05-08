@@ -39,6 +39,13 @@ https://shoes-for-runners.app
   - シューズのCRUD機能
   - ユーザーのCRUD機能
 
+# 機能説明
+| トップページ | TH 中央寄せ | TH 右寄せ |
+| :--- | :---: | ---: |
+| <img width="277" alt="トップページ" src="https://user-images.githubusercontent.com/90697671/167283481-5751456b-f739-4257-a919-cf85ad4153db.png">
+ | TD | TD |
+| サービス説明 | TD | TD |
+
 # テスト
 - 単体テスト(model)
 - 結合テスト(system)
