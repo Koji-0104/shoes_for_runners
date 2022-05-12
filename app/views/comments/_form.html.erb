@@ -2,7 +2,7 @@
   <div class="comment-form__inner">
     <%= form_with model: comment, url: [shoe, comment],local: false, remote: true, id: 'new_comment' do |f| %>
       <%= f.label :body, class: 'comment-form__title' %>
-      <%= f.text_area :body, class: 'comment-form__text-area', id: 'js-new-comment-body', row: 4, placeholder: Comment.human_attribute_name(:body) %>
+      <%= f.text_area :body, class: 'comment-form__text-area', row: 4, placeholder: Comment.human_attribute_name(:body) %>
       <%= f.submit t('defaults.post'), class: 'comment-form__btn' %>
     <% end %>
   </div>
