@@ -22,7 +22,6 @@ ja:
       added: "%{item}を追加しました"
       not_added: "%{item}を追加できませんでした"
       not_created: "%{item}を作成できませんでした"
-      not_created_comment: "%{item}投稿は1つのシューズにつき1回まで可能です"
       updated_user: "%{item}アカウントを更新しました"
       updated: "%{item}を更新しました"
       not_updated: "%{item}を更新できませんでした"
