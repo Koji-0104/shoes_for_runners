@@ -21,6 +21,10 @@
           <td><%= @user.decorate.name %></td>
         </tr>
         <tr>
+          <th scope="row"><%= User.human_attribute_name(:email) %></th>
+          <td><%= @user.email %></td>
+        </tr>
+        <tr>
           <th scope="row"><%= User.human_attribute_name(:created_at) %></th>
           <td><%= l @user.created_at, format: :long %></td>
         </tr>
