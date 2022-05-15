@@ -12,27 +12,28 @@
     max-width: 1020px;
     margin-left: auto;
     margin-right: auto;
-    padding: 60px 20px 60px;
+    padding: 40px 20px 50px;
     @include mq(m) {
     width: 750px;
-    padding: 60px 20px 60px;
+    padding: 40px 20px 50px;
   }
   @include mq(s) {
     width: 360px;
-    padding: 60px 20px 60px;
+    padding: 40px 20px 50px;
   }
   }
   &__title {
     text-align: center;
     font-size: 3.2rem;
     font-weight: bold;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     @include mq(s) {
-      margin-bottom: 50px;
+      margin-bottom: 40px;
     }
   }
   &__explanation{
     font-size: 1.8rem;
+    padding-bottom: 10px;
   }
   &__items-inner {
     display: block;
@@ -188,7 +189,7 @@
 //シューズ一覧画面
 .shoes-search{
   &__group {
-    margin-top: 20px;
+    margin-top: 15px;
   }
   &__title {
     font-size: 1.8rem;
@@ -200,7 +201,7 @@
     border-radius: 3px;
     border: 2px solid #ddd;
     box-sizing: border-box;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     @include mq(s) {
       width: 100%;
     }
